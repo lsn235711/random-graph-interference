@@ -8,4 +8,4 @@
 
 # Now run normal batch commands
 ml R
-Rscript rankr_sher_case5.R $seed
+Rscript rankr_sher.R $seed
