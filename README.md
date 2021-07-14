@@ -7,4 +7,4 @@ This repository contains the code to reproduce the numerical results in our pape
 
 ## Replicating the experiments
 * For Figure 2,6,7-9, the ".R" files in the corresponding folders can be directly executed on a laptop.
-* For Figure 3,4,5, one needs to run the "run-me.sh" file on a computing cluster, and then run the "\*output\*.R" file to make the plot. The "script.sh" file is specifically designed for the Stanford Sherlock cluster. One may need to modify the file correspondingly. 
+* For Figure 3,4,5, one needs to run the "run-me.sh" file on a computing cluster, and then run the "\*output\*.R" file to make the plot. The "script.sh" file is specifically designed for the [Stanford Sherlock](https://www.sherlock.stanford.edu/) cluster. One may need to modify the files correspondingly. 
