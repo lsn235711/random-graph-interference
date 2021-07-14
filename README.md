@@ -1,5 +1,5 @@
 # Random Graph Asymptotics for Treatment Effect Estimation under Network Interference
-This repository contains the code to reproduce the numerical results in (Li & Wager, 2021).
+This repository contains the code to reproduce the numerical results in Li and Wager (2021).
 
 ## Folder
 * experiments/: contains the code to reproduce the numerical results in our paper. Each subfolder contains the code of one figure or a group of figures. For example in folder "Figure_2_hist_direct/", the ".pdf" file is Figure 2 in the paper, and the ".R" file can be run to make the plot. 
