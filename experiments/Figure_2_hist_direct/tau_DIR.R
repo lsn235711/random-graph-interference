@@ -57,6 +57,7 @@ range2 = max( tau_true - min(tauhatHajs), max(tauhatHajs) - tau_true)
 x2 = seq(tau_true - range2, tau_true + range2, length.out=100)
 dat_dens21 = data.frame(x = x2, den = dnorm(x2, tau_true, sqrt(sigmaHa12/n)))
 dat_dens20 = data.frame(x = x2, den = dnorm(x2, tau_true, sqrt(sigmaHa02/n)))
+dfgg = with(dat_his,dat_dens1, dat_dens0)
 
 ##################
 ##  Make plots  ##
@@ -98,8 +99,13 @@ p2 = p2 + theme_bw()
 #p2
 
 library(ggpubr)
-ggarrange(
+pp = ggarrange(
   p, p2, 
   common.legend = TRUE, legend = "none"
 )
+
+library(tidyverse)
+pp %>% ggsave(file="Hist_DIR.pdf", width=8, height=4, units="in")
+
+pp
 
